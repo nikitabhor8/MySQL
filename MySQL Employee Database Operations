@@ -1,0 +1,25 @@
+-- Create a new database named EmployeeDB and use it
+CREATE DATABASE EmployeeDB;
+USE EmployeeDB;
+
+
+
+-- Create a table named Emp with the following columns
+CREATE TABLE Emp (
+    EmpId INT PRIMARY KEY,       -- Employee ID (Primary Key)
+    EmpName VARCHAR(45),         -- Employee Name
+    Role VARCHAR(30),            -- Employee Role
+    Salary BIGINT                -- Employee Salary
+);
+
+
+desc Emp;
+
+INSERT INTO Emp (EmpId, EmpName, Role, Salary) VALUES 
+(1, 'Alice', 'Manager', 80000),
+(2, 'Bob', 'Developer', 60000),
+(3, 'Charlie', 'Analyst', 50000),
+(4, 'Diana', 'Designer', 55000),
+(5, 'Eve', 'Tester', 45000);
+
+SELECT * FROM Emp;
